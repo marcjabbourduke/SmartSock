@@ -8,6 +8,11 @@
   justify-content: flex-start;
   background-color: lightblue;
 }
+
+.navlink{
+  display: contents
+}
+
 .icon {
   fill: darkblue;
   width: 100px;
