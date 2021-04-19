@@ -1,7 +1,75 @@
 import React from 'react'
-
+import axios from 'axios';
 import projectStyles from '../style.module.css'
 import styles from './create-rec.module.css'
+import PressureView from './pressure-view'
+
+const https = require('https');
+
+
+
+// const fetchData = async () => {
+  
+
+//   try {
+//     setInterval(async () => {
+//       const response = await axios.get(
+//         'http://192.168.1.203/L'
+//       );
+//     }, 1000);
+//   } catch(e) {
+//     console.log(e);
+//   }
+
+// };
+
+
+const fetchData = async () => {
+  try {
+    const instance = axios.create({
+      httpsAgent: new https.Agent({  
+        rejectUnauthorized: false
+      })
+    });
+    const res = instance.get('http://192.168.1.203');
+    console.log(res);
+    // const response = await axios.get(
+    //   'http://192.168.1.203'
+    // );
+    // console.log("success");
+    // console.log(response);
+  } catch(e) {
+    console.log(e);
+  }
+
+};
+
+const setHigh = async () => {
+  try {
+    // setInterval(async () => {
+      const response = await axios.get(
+        'http://192.168.1.203/H'
+      );
+    // }, 1000);
+  } catch(e) {
+    console.log(e);
+  }
+
+};
+
+const setLow = async () => {
+  try {
+    // setInterval(async () => {
+      const response = await axios.get(
+        'http://192.168.1.203/L'
+      );
+    // }, 1000);
+  } catch(e) {
+    console.log(e);
+  }
+
+};
+
 
 const CreateRec = () => {
   return (
@@ -44,7 +112,19 @@ const CreateRec = () => {
           </div>
         </div>
         <div className={styles.container11}>
-          <span className={styles.text4}>Recording View Here</span>
+          <PressureView />
+          {/* <button onClick={setHigh}> H </button>
+          <button onClick={setLow}> L </button>
+          <button onClick={fetchData}> Fetch Data </button> */}
+
+          {/* <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='http://192.168.1.203';
+            }}
+          > Click here</button> */}
+          {/* <span className={styles.text4}>Recording View Here</span> */}
         </div>
       </div>
     </div>

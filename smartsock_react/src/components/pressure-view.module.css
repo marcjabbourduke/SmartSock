@@ -1,0 +1,131 @@
+.maindiv {
+    width: 90%;
+    height: fit-content
+}
+
+.info {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 100%
+}
+
+.imgdiv {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.button {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    margin-top: 200px;
+    background-color: lightskyblue;
+    border-radius: 8px;
+}
+
+.image {
+    position: relative; 
+    width: 100%;
+    max-height: 700px;
+
+}
+
+.s1 {
+    z-index:100;
+    position:absolute;    
+    font-size:20px;
+    color: black;
+    font-weight:bold;
+    left:150px;
+    top:180px;
+    background-color: yellow;
+
+    border-radius: 8px;
+}
+
+.s2 {
+    z-index:100;
+    position:absolute;    
+    font-size:20px;
+    color: black;
+    font-weight:bold;
+    left:70px;
+    top:225px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.s3 {
+    z-index:100;
+    position:absolute;    
+    font-size:20px;
+    color: black;
+    font-weight:bold;
+    left:200px;
+    top:225px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.s4 {
+    z-index:100;
+    position:absolute;    
+    font-size:20px;
+    color: black;
+    font-weight:bold;
+    left:40px;
+    top:275px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.s5 {
+    z-index:100;
+    position:absolute;    
+    font-size:20px;
+    color: black;
+    font-weight:bold;
+    left:170px;
+    top:275px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.s6 {
+    z-index:100;
+    position:absolute;    
+    font-size:20px;
+    color: black;
+    font-weight:bold;
+    left:150px;
+    top:500px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.s7 {
+    z-index:100;
+    position:absolute;    
+    font-size:20px;
+    color: black;
+    font-weight:bold;
+    left:225px;
+    top:550px;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.yellow { 
+    background-color: yellow;
+}
+
+.orange { 
+    background-color: orange;
+}
+
+.red {
+    background-color: red;
+}
