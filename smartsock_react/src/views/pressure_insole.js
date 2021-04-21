@@ -1,7 +1,6 @@
 import React, { useState }  from 'react'
 import { Link } from 'react-router-dom'
 import ViewRec from '../components/view-rec'
-import CreateRec from '../components/create-rec'
 import CreateRecording from '../components/create-recording'
 import PressureView from '../components/pressure-view'
 import projectStyles from '../style.module.css'

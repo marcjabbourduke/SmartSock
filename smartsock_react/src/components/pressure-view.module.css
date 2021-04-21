@@ -26,6 +26,15 @@
     border-radius: 8px;
 }
 
+.buttonStop {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    margin-top: 200px;
+    background-color: lightcoral;
+    border-radius: 8px;
+}
+
 .image {
     position: relative; 
     width: 100%;
@@ -124,6 +133,10 @@
 
 .orange { 
     background-color: orange;
+}
+
+.darkorange {
+    background-color: darkorange;
 }
 
 .red {

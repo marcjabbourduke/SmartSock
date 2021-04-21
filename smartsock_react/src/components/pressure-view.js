@@ -20,7 +20,7 @@ function PressureView(props){
 
 function appropriateColor(sensorNum, allReadings){
     console.log(allReadings)
-    var colors = ['pressure-view_yellow__37YoH', 'pressure-view_orange__1yIMX', 'pressure-view_red__2q_Yp'];
+    var colors = ['pressure-view_yellow__37YoH', 'pressure-view_orange__1yIMX', 'pressure-view_darkorange__2VtOP', 'pressure-view_red__2q_Yp'];
     var className = ['pressure-view_s1__1ElJo', 'pressure-view_s2__1Yehm', 'pressure-view_s3__5ou7E',
         'pressure-view_s4__3Vg9Y', 'pressure-view_s5__2LB2O', 'pressure-view_s6__3e6MF', 'pressure-view_s7__3Kvx7'];
     var sensorIndex = sensorNum - 1;
@@ -34,8 +34,8 @@ function appropriateColor(sensorNum, allReadings){
     else if(sensorReading < 150){
       return className[sensorIndex] + ' ' + colors[2];
     }
-    else{
-      return className[sensorIndex] + ' ' + colors[2];
+    else {
+      return className[sensorIndex] + ' ' + colors[3];
     }
 }
 
